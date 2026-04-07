@@ -8,7 +8,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "driver/i2c_master.h"
+#include "driver/i2c.h"
 
 #ifdef __cplusplus
 extern "C" {

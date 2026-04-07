@@ -63,7 +63,7 @@ gpio_hal_level_t gpio_hal_get_level(uint8_t pin)
 
 bool gpio_hal_set_interrupt(uint8_t pin, bool enable)
 {
-    gpio_intr_type_t intr_type = enable ? GPIO_INTR_ANYEDGE : GPIO_INTR_DISABLE;
+    gpio_int_type_t intr_type = enable ? GPIO_INTR_ANYEDGE : GPIO_INTR_DISABLE;
     esp_err_t ret = gpio_set_intr_type(pin, intr_type);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to set interrupt on GPIO %d: %d", pin, ret);
